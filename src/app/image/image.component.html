@@ -1,0 +1,8 @@
+<div class="container" (scroll)="onScroll($event)">
+    <div *ngFor="let img of image">
+        <button class="imageCard" (click)="imageInfo('info/', img.id)">
+      <img class="image" src="{{ img.download_url }}" />
+      <div>{{ img.author }}</div>
+    </button>
+    </div>
+</div>
